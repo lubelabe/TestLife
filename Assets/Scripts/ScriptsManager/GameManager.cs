@@ -21,9 +21,6 @@ public class GameManager : MonoBehaviour
 
     public void ButtonAnimationConfirmation()
     {
-        int animRandom = Random.Range(-1,2);
-        animatorPlayer.SetInteger("DanceType", animRandom);
-        soAnimationSelected.animSelection = animRandom;
         StartCoroutine(NextSceneLoad());
     }
 
